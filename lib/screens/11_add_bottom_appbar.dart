@@ -17,7 +17,7 @@ class AddBottomAppBar extends StatelessWidget {
         bottomNavigationBar: BottomAppBar(
           color: Colors.green,
           child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               Icon(Icons.person),
               Icon(Icons.settings),

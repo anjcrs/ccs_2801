@@ -1,3 +1,7 @@
+import 'package:ccs_2801/screens/10_add_appbar.dart';
+import 'package:ccs_2801/screens/11_add_bottom_appbar.dart';
+import 'package:ccs_2801/tests/first_page.dart';
+import 'package:ccs_2801/tests/main_page.dart';
 import 'package:flutter/material.dart';
 import 'package:ccs_2801/screens/01_add_dartfile.dart';
 import 'package:ccs_2801/screens/02_add_container.dart';
@@ -23,26 +27,15 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        // This is the theme of your application.
-        //
-        // TRY THIS: Try running your application with "flutter run". You'll see
-        // the application has a purple toolbar. Then, without quitting the app,
-        // try changing the seedColor in the colorScheme below to Colors.green
-        // and then invoke "hot reload" (save your changes or press the "hot
-        // reload" button in a Flutter-supported IDE, or press "r" if you used
-        // the command line to start the app).
-        //
-        // Notice that the counter didn't reset back to zero; the application
-        // state is not lost during the reload. To reset the state, use hot
-        // restart instead.
-        //
-        // This works for code too, not just values: Most code changes can be
-        // tested with just a hot reload.
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const AddBottomNavigationBar2(),
+
+      home: const HomePage(),
       debugShowCheckedModeBanner: false,
+      routes: {
+        'first_page' : (context) => HomePage(),
+      },
     );
   }
 }

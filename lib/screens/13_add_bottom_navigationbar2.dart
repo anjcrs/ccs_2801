@@ -10,7 +10,8 @@ class AddBottomNavigationBar2 extends StatefulWidget {
 class _AddBottomNavigationBar2State extends State<AddBottomNavigationBar2> {
 int _selectedIndex = 0;
 static const TextStyle _styleOpt = TextStyle(
-    fontSize: 30, fontWeight: FontWeight.bold
+    fontSize: 30,
+    fontWeight: FontWeight.bold
 );
   static const List <Widget> _screenOpt = <Widget>[
     Text(
@@ -35,11 +36,14 @@ static const TextStyle _styleOpt = TextStyle(
       ),
     ),
   ];
+
+  // method
   void _onTapped(int index) {
     setState(() {
       _selectedIndex = index;
     });
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
