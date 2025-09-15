@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class MainPage extends StatefulWidget {
-  const MainPage({super.key});
+class MainPage1 extends StatefulWidget {
+  const MainPage1({super.key});
 
   @override
-  State<MainPage> createState() => _MainPageState();
+  State<MainPage1> createState() => _MainPage1State();
 }
 
-class _MainPageState extends State<MainPage> {
+class _MainPage1State extends State<MainPage1> {
 int _selectedIndex = 0;
 
 static const TextStyle _styleopt = TextStyle(

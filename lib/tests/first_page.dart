@@ -21,20 +21,11 @@ class HomePage extends StatelessWidget {
         shadowColor: Color(0xFFe1ad3f),
         child: Column(
           children: [
-            Icon(
-              Icons.school,
-              size: 20,
-              color: Colors.black,
-            ),
-            Icon(
-              Icons.logout,
-              size: 20,
-              color: Colors.black,
-            ),
-            Icon(
-              Icons.info,
-              size: 20,
-              color: Colors.black,
+            DrawerHeader(
+              child: Icon(
+                  Icons.school,
+              size: 40,
+              color: Colors.orangeAccent)
             ),
           ],
           mainAxisAlignment: MainAxisAlignment.end,
