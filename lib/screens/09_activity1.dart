@@ -8,7 +8,7 @@ class ActivityNumber1 extends StatelessWidget {
     return Scaffold(
       body: SafeArea(
       child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.start  ,
       children: [
 
         Container(
@@ -164,7 +164,9 @@ class ActivityNumber1 extends StatelessWidget {
             ),
           ],
         ),
-      ],),),
+      ],
+      ),
+      ),
     );
   }
 }
