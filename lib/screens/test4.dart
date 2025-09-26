@@ -169,7 +169,6 @@ class _Test4State extends State<Test4> {
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
-          SizedBox(height: 20),
           Text(
             'Row Widget',
             style: TextStyle(
@@ -178,7 +177,7 @@ class _Test4State extends State<Test4> {
             ),
           ),
 
-          SizedBox(height: 50),
+          SizedBox(height: 10),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
@@ -187,35 +186,48 @@ class _Test4State extends State<Test4> {
                 width: 80,
                 color: Colors.yellow,
               ),
+
               SizedBox(width: 80),
               Container(
                 height: 80,
                 width: 80,
                 color: Colors.brown,
               ),
+
+              SizedBox(width: 80),
+              Container(
+                height: 80,
+                width: 80,
+                color: Colors.green,
+              ),
             ],
           ),
 
-          SizedBox(height: 50),
-          // First row
+          SizedBox(height: 10),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Container(
                 height: 80,
                 width: 80,
-                color: Colors.purple,
+                color: Colors.transparent,
               ),
-              SizedBox(width: 80,),
+              SizedBox(width: 80),
               Container(
                 height: 80,
                 width: 80,
                 color: Colors.black,
               ),
+              SizedBox(width: 80),
+              Container(
+                height: 80,
+                width: 80,
+                color: Colors.transparent,
+              ),
             ],
           ),
 
-          SizedBox(height: 30),
+          SizedBox(height: 10),
           Row(
             mainAxisAlignment: MainAxisAlignment.center ,
             children: [
@@ -230,23 +242,16 @@ class _Test4State extends State<Test4> {
                 width: 80,
                 color: Colors.pink,
               ),
+              SizedBox(width: 80), // Empty space in middle
+              Container(
+                height: 80,
+                width: 80,
+                color: Colors.red,
+              ),
             ],
           ),
         ],
       ),
-    ),
-
-
-    Column(
-      mainAxisAlignment: MainAxisAlignment.start,
-      crossAxisAlignment: CrossAxisAlignment.end,
-      children: [
-        Container(
-          height: 80,
-          width: 80,
-          color: Colors.blue,
-        ),
-      ],
     ),
   ];
 

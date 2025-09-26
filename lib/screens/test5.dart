@@ -39,8 +39,8 @@ class _Test5State extends State<Test5> {
             ),
           ),
           Container(
-            width: 100,
-            height: 100,
+            width: 80,
+            height: 80,
             color: Colors.blue,
           ),
         ],
@@ -59,6 +59,7 @@ class _Test5State extends State<Test5> {
                 Center(
                   child: Column(
                     children: [
+                      SizedBox(height: 10),
                       Text(
                         'Column Widget',
                         style: TextStyle(
@@ -70,7 +71,7 @@ class _Test5State extends State<Test5> {
                   ),
                 ),
 
-                // LEFT COLUMN (your existing code)
+                // LEFT COLUMN
                 SizedBox(height: 20),
                 Container(
                   width: 80,
@@ -90,7 +91,7 @@ class _Test5State extends State<Test5> {
                   color: Colors.blue,
                 ),
 
-                // CENTER COLUMN (your existing code)
+                // CENTER COLUMN
                 Center(
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.center,
@@ -118,7 +119,7 @@ class _Test5State extends State<Test5> {
               ],
             ),
 
-            // RIGHT COLUMN - NEW ADDITION (aligned with left column)
+            // RIGHT COLUMN
             Positioned(
               right: 0,
               top: 60, // Same starting position as left column
@@ -149,56 +150,96 @@ class _Test5State extends State<Test5> {
       ),
     ),
 
-
-    // ROW WIDGET
-    Scaffold(
-      body: SafeArea(
-          child: Stack(
+    // Row Widget Screen
+    Center(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: <Widget>[
+          Text(
+            'Row Widget',
+            style: TextStyle(
+              fontSize: 30,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+          //First Row
+          SizedBox(height: 10),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Column(
-                children: <Widget>[
-                  Center(
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        Text(
-                            "Row widgets",
-                          style: TextStyle(
-                              fontSize: 30,
-                              fontWeight: FontWeight.bold
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                  SizedBox(
-                    height: 10,
-                  ),
-                  Container(
-                    height: 80,
-                    width: 80,
-                    color: Colors.blue,
-                  ),
-                  SizedBox(height: 10),
-                  Container(
-                    height: 80,
-                    width: 80,
-                    color: Colors.red,
-                  ),
-                  SizedBox(height: 10),
-                  Container(
-                    height: 80,
-                    width: 80,
-                    color: Colors.red,
-                  ),
-                ],
+              Container(
+                height: 80,
+                width: 80,
+                color: Colors.yellow,
+              ),
+
+              SizedBox(width: 80),
+              Container(
+                height: 80,
+                width: 80,
+                color: Colors.brown,
+              ),
+
+              SizedBox(width: 80),
+              Container(
+                height: 80,
+                width: 80,
+                color: Colors.green,
               ),
             ],
-          )
+          ),
+          //Second Row
+          SizedBox(height: 10),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Container(
+                height: 80,
+                width: 80,
+                color: Colors.transparent,
+              ),
+              SizedBox(width: 80),
+              Container(
+                height: 80,
+                width: 80,
+                color: Colors.black,
+              ),
+              SizedBox(width: 80),
+              Container(
+                height: 80,
+                width: 80,
+                color: Colors.transparent,
+              ),
+            ],
+          ),
+          //Third Row
+          SizedBox(height: 10),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center ,
+            children: [
+              Container(
+                height: 80,
+                width: 80,
+                color: Colors.orange,
+              ),
+              SizedBox(width: 80), // Empty space in middle
+              Container(
+                height: 80,
+                width: 80,
+                color: Colors.pink,
+              ),
+              SizedBox(width: 80), // Empty space in middle
+              Container(
+                height: 80,
+                width: 80,
+                color: Colors.red,
+              ),
+            ],
+          ),
+        ],
       ),
     ),
-
   ];
 
   void _onTapped(int index) {
