@@ -95,22 +95,21 @@ class _Test5State extends State<Test5> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: <Widget>[
-                      SizedBox(height: 10),
                       Container(
-                        width: 70,
-                        height: 70,
+                        width: 80,
+                        height: 80,
                         color: Colors.blue,
                       ),
                       SizedBox(height: 10),
                       Container(
-                        width: 70,
-                        height: 70,
+                        width: 80,
+                        height: 80,
                         color: Colors.blue,
                       ),
                       SizedBox(height: 10),
                       Container(
-                        width: 70,
-                        height: 70,
+                        width: 80,
+                        height: 80,
                         color: Colors.blue,
                       ),
                     ],
@@ -152,15 +151,54 @@ class _Test5State extends State<Test5> {
 
 
     // ROW WIDGET
-    Center(
-      child: Text(
-          'Row Widget',
-        style: TextStyle(
-          fontSize: 30,
-          fontWeight: FontWeight.bold,
-        ),
+    Scaffold(
+      body: SafeArea(
+          child: Stack(
+            children: [
+              Column(
+                children: <Widget>[
+                  Center(
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Text(
+                            "Row widgets",
+                          style: TextStyle(
+                              fontSize: 30,
+                              fontWeight: FontWeight.bold
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Container(
+                    height: 80,
+                    width: 80,
+                    color: Colors.blue,
+                  ),
+                  SizedBox(height: 10),
+                  Container(
+                    height: 80,
+                    width: 80,
+                    color: Colors.red,
+                  ),
+                  SizedBox(height: 10),
+                  Container(
+                    height: 80,
+                    width: 80,
+                    color: Colors.red,
+                  ),
+                ],
+              ),
+            ],
+          )
       ),
     ),
+
   ];
 
   void _onTapped(int index) {

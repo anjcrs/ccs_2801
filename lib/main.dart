@@ -16,7 +16,8 @@ import 'package:ccs_2801/screens/06_add_column.dart';
 import 'package:ccs_2801/screens/07_add_row.dart';
 import 'package:ccs_2801/screens/08_add_columnrow.dart';
 import 'package:ccs_2801/screens/09_activity1.dart';
-import 'package:ccs_2801/screens/13_add_bottom_navigationbar2.dart' show AddBottomNavigationBar2;
+import 'package:ccs_2801/screens/13_add_bottom_navigationbar2.dart'
+    show AddBottomNavigationBar2;
 
 import 'MyCPU/main_page.dart';
 
@@ -37,7 +38,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
 
-      home: const Test5(),
+      home: const Test4(),
       debugShowCheckedModeBanner: false,
     );
   }

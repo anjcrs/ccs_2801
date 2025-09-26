@@ -133,6 +133,7 @@ class _Test4State extends State<Test4> {
                   ),
                 ],
               ),
+
               // Right column
               Column(
                 children: [
@@ -168,72 +169,84 @@ class _Test4State extends State<Test4> {
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
-          const SizedBox(height: 20),
-          const Text(
+          SizedBox(height: 20),
+          Text(
             'Row Widget',
             style: TextStyle(
               fontSize: 30,
               fontWeight: FontWeight.bold,
             ),
           ),
-          const SizedBox(height: 50),
-          // First row
+
+          SizedBox(height: 50),
           Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Container(
                 height: 80,
                 width: 80,
-                color: Colors.blue,
+                color: Colors.yellow,
               ),
-              Column(
-                children: [
-                  Container(
-                    height: 80,
-                    width: 80,
-                    color: Colors.blue,
-                  ),
-                  const SizedBox(height: 10),
-                  Container(
-                    height: 80,
-                    width: 80,
-                    color: Colors.blue,
-                  ),
-                  const SizedBox(height: 10),
-                  Container(
-                    height: 80,
-                    width: 80,
-                    color: Colors.blue,
-                  ),
-                ],
-              ),
+              SizedBox(width: 80),
               Container(
                 height: 80,
                 width: 80,
-                color: Colors.blue,
+                color: Colors.brown,
               ),
             ],
           ),
-          const SizedBox(height: 30),
-          // Second row
+
+          SizedBox(height: 50),
+          // First row
           Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Container(
                 height: 80,
                 width: 80,
-                color: Colors.blue,
+                color: Colors.purple,
               ),
-              const SizedBox(width: 80), // Empty space in middle
+              SizedBox(width: 80,),
               Container(
                 height: 80,
                 width: 80,
-                color: Colors.blue,
+                color: Colors.black,
+              ),
+            ],
+          ),
+
+          SizedBox(height: 30),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center ,
+            children: [
+              Container(
+                height: 80,
+                width: 80,
+                color: Colors.orange,
+              ),
+              SizedBox(width: 80), // Empty space in middle
+              Container(
+                height: 80,
+                width: 80,
+                color: Colors.pink,
               ),
             ],
           ),
         ],
       ),
+    ),
+
+
+    Column(
+      mainAxisAlignment: MainAxisAlignment.start,
+      crossAxisAlignment: CrossAxisAlignment.end,
+      children: [
+        Container(
+          height: 80,
+          width: 80,
+          color: Colors.blue,
+        ),
+      ],
     ),
   ];
 
