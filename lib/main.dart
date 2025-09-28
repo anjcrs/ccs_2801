@@ -1,3 +1,4 @@
+import 'package:ccs_2801/screens/test6.dart';
 import 'package:flutter/material.dart';
 import 'package:ccs_2801/tests/first_page.dart';
 import 'package:ccs_2801/tests/main_page.dart';
@@ -38,7 +39,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
 
-      home: const Test5(),
+      home: const Test6(),
       debugShowCheckedModeBanner: false,
     );
   }
@@ -55,8 +56,7 @@ class MyApp extends StatelessWidget {
 
 
 
-//
-//
+
 // import 'package:flutter/material.dart';
 // import 'package:google_fonts/google_fonts.dart';
 // import 'package:ccs_2801/tests/main_page.dart';
