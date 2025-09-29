@@ -48,7 +48,6 @@ class _Test5State extends State<Test5> {
     ),
 
     // COLUMN WIDGET
-    // COLUMN WIDGET - Updated version with right column added
     Scaffold(
       body: SafeArea(
         child: Stack(
@@ -122,7 +121,7 @@ class _Test5State extends State<Test5> {
             // RIGHT COLUMN
             Positioned(
               right: 0,
-              top: 60, // Same starting position as left column
+              top: 60,
               child: Column(
                 children: [
                   Container(

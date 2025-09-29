@@ -49,8 +49,7 @@ class _Test6State extends State<Test6> {
 
     // COLUMN WIDGET - LEFT AND RIGHT ALIGNED, CENTER AT BOTTOM
     Scaffold(
-      body: SafeArea(
-        child: SingleChildScrollView(
+        body: SingleChildScrollView(
           child: Stack(
             children: [
               Column(
@@ -151,7 +150,6 @@ class _Test6State extends State<Test6> {
             ],
           ),
         ),
-      ),
     ),
 
     // Row Widget Screen
