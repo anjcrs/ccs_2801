@@ -1,4 +1,8 @@
 import 'package:ccs_2801/screens/14_prelim_examm.dart';
+import 'package:ccs_2801/screens/15_add_buttons.dart';
+import 'package:ccs_2801/screens/16_add_image.dart';
+import 'package:ccs_2801/screens/17_add_card.dart';
+import 'package:ccs_2801/screens/18_add_snackbar.dart';
 import 'package:ccs_2801/screens/test6.dart';
 import 'package:ccs_2801/screens/test9.dart';
 import 'package:flutter/material.dart';
@@ -41,7 +45,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
 
-      home: const Test6(),
+      home: const AddSnackbar(),
       debugShowCheckedModeBanner: false,
     );
   }
