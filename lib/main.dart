@@ -45,7 +45,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
 
-      home: const AddSnackbar(),
+      home: const AddCard(),
       debugShowCheckedModeBanner: false,
     );
   }
