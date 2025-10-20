@@ -13,7 +13,7 @@ class AddImage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Image.asset('assets/images/signin.png'),
+      body: Image.asset('assets/welcome1.png'),
     );
   }
 }

@@ -12,7 +12,7 @@ class AddCard extends StatelessWidget {
         elevation: 10,
         child: Padding(
           padding: const EdgeInsets.all(20.0),
-          child: Image.asset('assets/images/signin.png'),
+          child: Image.asset('assets/welcome1.png'),
         ),
       ),
     );

@@ -6,7 +6,8 @@ class AddImage1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SafeArea(child: Image.asset('assets/welcome1.png')),
+      body: SafeArea(child: Image.asset('assets/welcome1.png')
+      ),
     );
   }
 }

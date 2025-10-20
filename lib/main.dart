@@ -1,5 +1,6 @@
 import 'package:ccs_2801/screens/14_prelim_examm.dart';
 import 'package:ccs_2801/screens/15_add_buttons.dart';
+import 'package:ccs_2801/screens/16.dart';
 import 'package:ccs_2801/screens/16_add_image.dart';
 import 'package:ccs_2801/screens/17.dart';
 import 'package:ccs_2801/screens/17_add_card.dart';
@@ -47,7 +48,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
 
-      home: const AddCard1(),
+      home: const AddImage1(),
       debugShowCheckedModeBanner: false,
     );
   }

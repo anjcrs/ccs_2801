@@ -10,9 +10,9 @@ class AddCard1 extends StatelessWidget {
           child: Column(
             children: [
               Card(
-                child: Image.asset('assets/welcome1.png'), 
                 elevation: 10,
                 shadowColor: Colors.blue,
+                child: Image.asset('assets/welcome1.png'),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
